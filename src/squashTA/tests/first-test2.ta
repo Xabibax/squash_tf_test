@@ -5,4 +5,4 @@ DEFINE $(true) as lol
 DEFINE $(lolol) as lolol
 
 ASSERT lol DOES contain THE lol
-ASSERT lolol DOES contain THE lolol
+ASSERT lolol DOES contain THE lol
