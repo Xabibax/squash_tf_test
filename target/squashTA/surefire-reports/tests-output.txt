@@ -1,1 +1,0 @@
-[[ATTACHMENT--|c:\Users\u0598083\Documents\SquashTA-1.10.0-RELEASE-workspace\my.squash.ta.project\target\squashTA\surefire-reports\attachments\tests\tests\first-test2.ta\EXECUTION_REPORT-detectedForbiddenContext.txt]]
