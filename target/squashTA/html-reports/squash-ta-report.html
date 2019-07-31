@@ -3,10 +3,12 @@
 <head>
 <title>Execution report - my.squash.ta.project:1.0</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Please leave knacss.css alone : it is not ours and should be used as is. -->
 <link rel="stylesheet" href="public/stylesheets/knacss.css" media="all" />
+<!-- Please write all CSS evolutions in the tweak.css file below, NOT in knack.css above : it is not ours and should be used as is. -->
+<link rel="stylesheet" href="public/stylesheets/tweaks.css" media="all" />
 <link rel="icon" type="image/png" href="public/images/logo_squash_favicone.ico" />
 <link rel="shortcut icon" type="image/x-icon" href="public/images/logo_squash_favicone.ico" />
-<script type="text/javascript" src="public/javascripts/dropdown.js" ></script>
 </head>
 <body class="ml2 mr2 mt1">
     <div id="header" class="row">
@@ -23,7 +25,7 @@
                 <span>ArtifactId:&nbsp;</span>my.squash.ta.project<br/> 
                 <span>Version:&nbsp;</span>1.0<br/> 
                 <br/> 
-                <span>Execution date:&nbsp;</span>07/30/2019 13:55:04
+                <span>Execution date:&nbsp;</span>07/31/2019 09:39:33
                 <br/>
             </div>
 
@@ -45,7 +47,7 @@
                     <tbody>
     <tr>
         <td class="center status">
-            <div style="width:15px"><a href="#tests">        <img src="public/images/Circle_Yellow.png" />
+            <div class="w15p"><a href="#tests">        <img src="public/images/Circle_Yellow.png" />
 </a></div>
         </td>
         <td><a href="#tests">tests</a></td>
@@ -56,7 +58,7 @@
         <td>0</td>
         <td>0</td>
         <td>50%</td>
-        <td>0,324</td>
+        <td>0,115</td>
     </tr>
                     </tbody>
                     <tfoot>
@@ -69,7 +71,7 @@
                             <td>0</td>
                             <td>0</td>                        
                             <td>50%</td>
-                            <td>0,324</td>
+                            <td>0,115</td>
                         </tr>
                     </tfoot>
             </table>
@@ -110,7 +112,7 @@ tests
         <td>        Success
 </td>
         <td>
-                0,297
+                0,08
         </td>
     </tr>
     <tr>
@@ -122,7 +124,7 @@ tests
         <td>        Failure
 </td>
         <td>
-                0,018
+                0,027
         </td>
     </tr>
                 </tbody>
@@ -142,7 +144,7 @@ tests
             <div class="note">
                 <span>Status:&nbsp;</span>        Success
 <br/>
-                <span>Time (s):&nbsp;</span>0,297
+                <span>Time (s):&nbsp;</span>0,08
             </div>
     
             <table class="w100 striped">
@@ -214,7 +216,7 @@ tests
             <div class="note">
                 <span>Status:&nbsp;</span>        Failure
 <br/>
-                <span>Time (s):&nbsp;</span>0,018
+                <span>Time (s):&nbsp;</span>0,027
             </div>
     
             <table class="w100 striped">
@@ -271,10 +273,10 @@ tests
                 <div class="stack">
     <div class="row">
     <div id="toggle0-expand" class="col-mid toggle-button">
-        <a href="javascript:toggleDisplay('toggle0');"><img src="public/images/expand.png"/></a>
+        <a class="toggleClass" name="toggle0"><img src="public/images/expand.png"/></a>
     </div>
     <div id="toggle0-collapse" class="desktop-hidden toggle-button">
-        <a href="javascript:toggleDisplay('toggle0');"><img src="public/images/collapse.png"/></a>
+        <a class="toggleClass" name="toggle0"><img src="public/images/collapse.png"/></a>
     </div>
         
         <div class="col-mid">The pattern 'true' was not found in the file.</div>
@@ -283,21 +285,21 @@ tests
         <div id="toggle0" class="desktop-hidden small col trace">
             <pre>
 org.squashtest.ta.framework.exception.BinaryAssertionFailedException: The pattern &apos;true&apos; was not found in the file.
-	at org.squashtest.ta.plugin.filechecker.assertions.FileContains.test(FileContains.java:55)
+	at org.squashtest.ta.plugin.filechecker.assertions.FileContains.test(FileContains.java:60)
 	at org.squashtest.ta.backbone.engine.wrapper.BinaryAssertionHandler.test(BinaryAssertionHandler.java:121)
 	at org.squashtest.ta.backbone.engine.instructionrunner.DefaultBinaryAssertionRunner.doRun(DefaultBinaryAssertionRunner.java:91)
-	at org.squashtest.ta.backbone.engine.instructionrunner.AbstractDefaultInstructionRunner.run(AbstractDefaultInstructionRunner.java:69)
-	at org.squashtest.ta.backbone.engine.impl.TestRunnerImpl.runInstruction(TestRunnerImpl.java:205)
-	at org.squashtest.ta.backbone.engine.impl.TestRunnerImpl.runInstructionList(TestRunnerImpl.java:150)
-	at org.squashtest.ta.backbone.engine.impl.TestRunnerImpl.runPhase(TestRunnerImpl.java:138)
-	at org.squashtest.ta.backbone.engine.impl.TestRunnerImpl.runTest(TestRunnerImpl.java:109)
-	at org.squashtest.ta.backbone.engine.impl.EcosystemRunnerImpl.runAllTests(EcosystemRunnerImpl.java:202)
-	at org.squashtest.ta.backbone.engine.impl.EcosystemRunnerImpl.run(EcosystemRunnerImpl.java:104)
+	at org.squashtest.ta.backbone.engine.instructionrunner.AbstractDefaultInstructionRunner.run(AbstractDefaultInstructionRunner.java:70)
+	at org.squashtest.ta.backbone.engine.impl.TestRunnerImpl.runInstruction(TestRunnerImpl.java:215)
+	at org.squashtest.ta.backbone.engine.impl.TestRunnerImpl.runInstructionList(TestRunnerImpl.java:160)
+	at org.squashtest.ta.backbone.engine.impl.TestRunnerImpl.runPhase(TestRunnerImpl.java:148)
+	at org.squashtest.ta.backbone.engine.impl.TestRunnerImpl.runTest(TestRunnerImpl.java:119)
+	at org.squashtest.ta.backbone.engine.impl.EcosystemRunnerImpl.runAllTests(EcosystemRunnerImpl.java:203)
+	at org.squashtest.ta.backbone.engine.impl.EcosystemRunnerImpl.run(EcosystemRunnerImpl.java:105)
 	at org.squashtest.ta.backbone.engine.impl.SuiteRunnerImpl.execute(SuiteRunnerImpl.java:68)
-	at org.squashtest.ta.backbone.engine.impl.EngineImpl.execute(EngineImpl.java:63)
-	at org.squashtest.ta.maven.SquashTAMojo.executeImpl(SquashTAMojo.java:309)
-	at org.squashtest.ta.maven.AbstractSquashTaMojo.execution(AbstractSquashTaMojo.java:98)
-	at org.squashtest.ta.maven.AbstractBaseSquashTaMojo.execute(AbstractBaseSquashTaMojo.java:150)
+	at org.squashtest.ta.backbone.engine.impl.EngineImpl.execute(EngineImpl.java:69)
+	at org.squashtest.ta.maven.SquashTAMojo.executeImpl(SquashTAMojo.java:335)
+	at org.squashtest.ta.maven.AbstractSquashTaMojo.execution(AbstractSquashTaMojo.java:100)
+	at org.squashtest.ta.maven.AbstractBaseSquashTaMojo.execute(AbstractBaseSquashTaMojo.java:85)
 	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:154)
@@ -355,7 +357,8 @@ org.squashtest.ta.framework.exception.BinaryAssertionFailedException: The patter
         
     </div>
     <div class="footer txtcenter">
-        <p>Generated by Squash TA&copy; on 07/30/2019 13:55</p>
+        <p>Generated by Squash TF&copy; on 07/31/2019 09:39</p>
     </div>
+    <script type="text/javascript" src="public/javascripts/dropdown.js" ></script>
 </body>
 </html>

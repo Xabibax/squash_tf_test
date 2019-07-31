@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite time="0.324" failures="1" tests="2" name="tests" >
-  <testcase time="0.297" classname="tests" name="first-test.ta" />
-  <testcase time="0.018" classname="tests" name="first-test2.ta" >
+<testsuite time="0.115" failures="1" tests="2" name="tests" >
+  <testcase time="0.08" classname="tests" name="first-test.ta" />
+  <testcase time="0.027" classname="tests" name="first-test2.ta" >
     <failure message="The pattern &apos;true&apos; was not found in the file." type="org.squashtest.ta.framework.exception.BinaryAssertionFailedException" >
 Summary
 TEST :
@@ -10,21 +10,21 @@ TEST :
 [SUCCESS] ASSERT lol DOES contain THE lol
 [FAIL] ASSERT lolol DOES contain THE lol
 org.squashtest.ta.framework.exception.BinaryAssertionFailedException: The pattern &apos;true&apos; was not found in the file.
-	at org.squashtest.ta.plugin.filechecker.assertions.FileContains.test(FileContains.java:55)
+	at org.squashtest.ta.plugin.filechecker.assertions.FileContains.test(FileContains.java:60)
 	at org.squashtest.ta.backbone.engine.wrapper.BinaryAssertionHandler.test(BinaryAssertionHandler.java:121)
 	at org.squashtest.ta.backbone.engine.instructionrunner.DefaultBinaryAssertionRunner.doRun(DefaultBinaryAssertionRunner.java:91)
-	at org.squashtest.ta.backbone.engine.instructionrunner.AbstractDefaultInstructionRunner.run(AbstractDefaultInstructionRunner.java:69)
-	at org.squashtest.ta.backbone.engine.impl.TestRunnerImpl.runInstruction(TestRunnerImpl.java:205)
-	at org.squashtest.ta.backbone.engine.impl.TestRunnerImpl.runInstructionList(TestRunnerImpl.java:150)
-	at org.squashtest.ta.backbone.engine.impl.TestRunnerImpl.runPhase(TestRunnerImpl.java:138)
-	at org.squashtest.ta.backbone.engine.impl.TestRunnerImpl.runTest(TestRunnerImpl.java:109)
-	at org.squashtest.ta.backbone.engine.impl.EcosystemRunnerImpl.runAllTests(EcosystemRunnerImpl.java:202)
-	at org.squashtest.ta.backbone.engine.impl.EcosystemRunnerImpl.run(EcosystemRunnerImpl.java:104)
+	at org.squashtest.ta.backbone.engine.instructionrunner.AbstractDefaultInstructionRunner.run(AbstractDefaultInstructionRunner.java:70)
+	at org.squashtest.ta.backbone.engine.impl.TestRunnerImpl.runInstruction(TestRunnerImpl.java:215)
+	at org.squashtest.ta.backbone.engine.impl.TestRunnerImpl.runInstructionList(TestRunnerImpl.java:160)
+	at org.squashtest.ta.backbone.engine.impl.TestRunnerImpl.runPhase(TestRunnerImpl.java:148)
+	at org.squashtest.ta.backbone.engine.impl.TestRunnerImpl.runTest(TestRunnerImpl.java:119)
+	at org.squashtest.ta.backbone.engine.impl.EcosystemRunnerImpl.runAllTests(EcosystemRunnerImpl.java:203)
+	at org.squashtest.ta.backbone.engine.impl.EcosystemRunnerImpl.run(EcosystemRunnerImpl.java:105)
 	at org.squashtest.ta.backbone.engine.impl.SuiteRunnerImpl.execute(SuiteRunnerImpl.java:68)
-	at org.squashtest.ta.backbone.engine.impl.EngineImpl.execute(EngineImpl.java:63)
-	at org.squashtest.ta.maven.SquashTAMojo.executeImpl(SquashTAMojo.java:309)
-	at org.squashtest.ta.maven.AbstractSquashTaMojo.execution(AbstractSquashTaMojo.java:98)
-	at org.squashtest.ta.maven.AbstractBaseSquashTaMojo.execute(AbstractBaseSquashTaMojo.java:150)
+	at org.squashtest.ta.backbone.engine.impl.EngineImpl.execute(EngineImpl.java:69)
+	at org.squashtest.ta.maven.SquashTAMojo.executeImpl(SquashTAMojo.java:335)
+	at org.squashtest.ta.maven.AbstractSquashTaMojo.execution(AbstractSquashTaMojo.java:100)
+	at org.squashtest.ta.maven.AbstractBaseSquashTaMojo.execute(AbstractBaseSquashTaMojo.java:85)
 	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:154)
