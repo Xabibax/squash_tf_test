@@ -22,24 +22,28 @@
 			<groupId>org.mortbay.jetty</groupId>
 			<artifactId>jetty</artifactId>
 			<version>6.1.26</version>
+			<url>https://mvnrepository.com/artifact/org.mortbay.jetty/jetty</url>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.mortbay.jetty/jetty-util -->
 		<dependency>
 			<groupId>org.mortbay.jetty</groupId>
 			<artifactId>jetty-util</artifactId>
 			<version>6.1.26</version>
+			<url>https://mvnrepository.com/artifact/org.mortbay.jetty/jetty-util</url>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on -->
 		<dependency>
 			<groupId>org.bouncycastle</groupId>
 			<artifactId>bcprov-jdk15on</artifactId>
 			<version>1.46</version>
+			<url>https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on</url>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.btr/proxy-vole -->
 		<dependency>
 			<groupId>com.btr</groupId>
 			<artifactId>proxy-vole</artifactId>
 			<version>20131209</version>
+			<url>https://mvnrepository.com/artifact/com.btr/proxy-vole</url>
 		</dependency>
 	</dependencies>
 	<build>
